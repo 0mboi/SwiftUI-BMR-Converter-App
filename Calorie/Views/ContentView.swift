@@ -44,17 +44,13 @@ struct ContentView: View {
                 ResultCard()
             }
             
-            if activeCardIndex <= 3 || activeCardIndex == 5 {
-                NextButton()
-                    .onTapGesture {
-                        moveToNextCard()
-                    }
+            if activeCardIndex < 4 || activeCardIndex == 5 {
+                
+                NextButton(index: $activeCardIndex)
+   
             } else {
-                CalculateButton()
-                    .onTapGesture {
-                        model.calculateBMR()
-                        moveToNextCard()
-                    }
+                CalculateButton(index: $activeCardIndex)
+
             }
             
             
@@ -63,18 +59,7 @@ struct ContentView: View {
         
     }
     
-    func moveToNextCard() {
-        
-        withAnimation {
-            
-            if activeCardIndex <= 4 {
-            activeCardIndex += 1
-            } else {
-            activeCardIndex = 0
-            }
-        }
-        
-    }
+
 }
 
 
