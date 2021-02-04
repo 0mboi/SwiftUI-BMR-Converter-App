@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @EnvironmentObject var model: CalorieModel
+    
     @State var activeCardIndex: Int = 0
     
     var body: some View {
@@ -42,12 +44,21 @@ struct ContentView: View {
                 ResultCard()
             }
             
+            if activeCardIndex <= 3 || activeCardIndex == 5 {
+                NextButton()
+                    .onTapGesture {
+                        moveToNextCard()
+                    }
+            } else {
+                CalculateButton()
+                    .onTapGesture {
+                        model.calculateBMR()
+                        moveToNextCard()
+                    }
+            }
             
             
-            NextButton()
-                .onTapGesture {
-                    moveToNextCard()
-                }
+            
         }
         
     }

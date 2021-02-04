@@ -12,4 +12,18 @@ class CalorieModel: ObservableObject {
     @Published var age: Double = 36
     @Published var height: Double = 56
     @Published var weight: Double = 180
+    @Published var resultBMR: Double = 0
+    
+    func calculateBMR() {
+        if gender == Gender.male {
+            //MALE
+            resultBMR = (10 * weight) + (6.25 * height) - (5 * age) + 5
+            
+        } else {
+            //FEMALE
+            
+            resultBMR = (10 * weight) + (6.25 * height) - (5 * age) - 161
+            
+        }
+    }
 }

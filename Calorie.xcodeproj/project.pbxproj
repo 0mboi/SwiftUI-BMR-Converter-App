@@ -23,6 +23,7 @@
 		68148D7525CB986700AA0775 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68148D7425CB986700AA0775 /* Gender.swift */; };
 		68148D7825CB98AF00AA0775 /* CalorieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68148D7725CB98AF00AA0775 /* CalorieModel.swift */; };
 		68148D7B25CB9B5C00AA0775 /* SliderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68148D7A25CB9B5C00AA0775 /* SliderValue.swift */; };
+		68148D7E25CBA11B00AA0775 /* CalculateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68148D7D25CBA11B00AA0775 /* CalculateButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		68148D7425CB986700AA0775 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		68148D7725CB98AF00AA0775 /* CalorieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieModel.swift; sourceTree = "<group>"; };
 		68148D7A25CB9B5C00AA0775 /* SliderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValue.swift; sourceTree = "<group>"; };
+		68148D7D25CBA11B00AA0775 /* CalculateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				68148D4425CB8F4500AA0775 /* ContentView.swift */,
+				68148D7D25CBA11B00AA0775 /* CalculateButton.swift */,
 				68148D7125CB931900AA0775 /* ResultCard.swift */,
 				68148D6E25CB930D00AA0775 /* WeightCard.swift */,
 				68148D6B25CB930100AA0775 /* HeightCard.swift */,
@@ -203,6 +206,7 @@
 				68148D6F25CB930D00AA0775 /* WeightCard.swift in Sources */,
 				68148D5C25CB90AA00AA0775 /* CardBackground.swift in Sources */,
 				68148D7B25CB9B5C00AA0775 /* SliderValue.swift in Sources */,
+				68148D7E25CBA11B00AA0775 /* CalculateButton.swift in Sources */,
 				68148D6925CB92F200AA0775 /* AgeCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
